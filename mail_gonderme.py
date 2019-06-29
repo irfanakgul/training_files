@@ -24,7 +24,7 @@ try:
     mail=smtplib.SMTP("smtp.gmail.com",587)
     mail.ehlo()
     mail.starttls()
-    mail.login("mrakgul.nl@gmail.com" , "AKgL3467")
+    mail.login("mrakgul.nl@gmail.com" , "********")
     mail.sendmail(mesaj["From"],mesaj["To"],mesaj.as_string())
     print("Mail Basari ile gonderildi..")
     mail.close()
